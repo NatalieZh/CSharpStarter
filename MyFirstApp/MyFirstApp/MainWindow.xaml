@@ -1,0 +1,17 @@
+﻿<Window x:Class="MyFirstApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyFirstApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtCopyFrom" HorizontalAlignment="Left" Margin="147,37,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="502" Height="21"/>
+        <TextBox x:Name="txtCopyTo" HorizontalAlignment="Left" Margin="147,78,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="502" Height="21"/>
+        <Button x:Name="button" Content="Copy Text" HorizontalAlignment="Left" Margin="283,126,0,0" VerticalAlignment="Top" Height="32" Width="230" Click="button_Click"/>
+        <Label x:Name="label" Content="Copy from" HorizontalAlignment="Left" Margin="38,35,0,0" VerticalAlignment="Top" Width="89"/>
+        <Label x:Name="label_Copy" Content="Copy to" HorizontalAlignment="Left" Margin="38,73,0,0" VerticalAlignment="Top" Width="89"/>
+
+    </Grid>
+</Window>
