@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstApp", "MyFirstApp\MyFirstApp\MyFirstApp.csproj", "{5E693037-03C0-42F0-B44A-CC6AF80E0E59}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_002", "Lesson1\Lesson_002.csproj", "{0069D96B-9FF5-45BC-AA8C-5ED496EC5C06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 002", "Lesson1\Lesson 002.csproj", "{0069D96B-9FF5-45BC-AA8C-5ED496EC5C06}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_002_form", "Lesson_002_form\Lesson_002_form.csproj", "{87D479D0-BCC2-4CB6-9056-E919DAEF06A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 002 Form", "Lesson_002_form\Lesson 002 Form.csproj", "{87D479D0-BCC2-4CB6-9056-E919DAEF06A0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 003", "Lesson 003\Lesson 003.csproj", "{54FDB544-A514-4FA6-A3C7-98DD693AA413}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson 004", "Lesson 004\Lesson 004.csproj", "{DE255BD4-A34B-45B6-B091-C622C30B5B8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{54FDB544-A514-4FA6-A3C7-98DD693AA413}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54FDB544-A514-4FA6-A3C7-98DD693AA413}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54FDB544-A514-4FA6-A3C7-98DD693AA413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
