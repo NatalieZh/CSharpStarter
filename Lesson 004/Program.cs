@@ -7,9 +7,11 @@ namespace Lesson_004
     {
         static void Main(string[] args)
         {
+            string temp;
+
             #region Task0
-            // it doesn't work on my Windows withou setting encoding
-            System.Console.OutputEncoding = System.Text.Encoding.UTF8;
+            // it doesn't work on my Windows without setting encoding
+            System.Console.OutputEncoding = System.Text.Encoding.Unicode;
             System.Console.InputEncoding = System.Text.Encoding.Unicode;
 
             string word;
@@ -61,14 +63,14 @@ namespace Lesson_004
             while (Console.ReadKey().Key != ConsoleKey.Enter) ;
             #endregion
 
-            #region
+            #region Task2
             Console.WriteLine("\n ----------------------------------------------------------");
             Console.WriteLine("\n Task 2.");
             Console.WriteLine("Program can do basic math operations with 2 numbers.\n");
             double operand1, operand2;
-            double? result = null;
-            bool operandChecked = true;
-            string sign, temp;
+            double? result;
+            bool operandChecked;
+            string sign;
             do 
             {
                 // get operand1
@@ -91,13 +93,14 @@ namespace Lesson_004
                     operandChecked = double.TryParse(temp, out operand2);
                     if (!operandChecked)
                     {
-                        Console.WriteLine("{0} is not a number! Please try again: ", temp);
+                        Console.WriteLine("{0} is not a number! Please try again!", temp);
                     }
                 }
                 while (!operandChecked);
                 //get sighn
                 do
                 {
+                    result = null;
                     Console.Write("Enter one of simple math operations (+,-,*,/): ");
                     sign = Console.ReadLine();
                     switch (sign)
@@ -114,6 +117,7 @@ namespace Lesson_004
                         case "/":
                             if (operand2 == 0)
                             {
+                                result = double.NaN;
                                 Console.WriteLine("Devide by 0 is not possible!");
                             }
                             else
@@ -128,11 +132,55 @@ namespace Lesson_004
 
                 }
                 while (!result.HasValue);
-                Console.WriteLine("\nResult: {0} {1} {2} = {3}.", operand1, sign, operand2, result.Value);
+
+                Console.WriteLine("Result: {0} {1} {2} = {3}.", operand1, sign, operand2, result.Value);
                 Console.Write("New calculation - press any key, Exit - press Enter...");
             }
             while (Console.ReadKey().Key != ConsoleKey.Enter);
+            #endregion
 
+            #region Task3
+            Console.WriteLine("\n\nTask 3.");
+            Console.WriteLine("Check if number in a range.");
+            double number;
+
+            do
+            {
+                do
+                {
+                    Console.Write("\nEnter a number from 0 to 100: ");
+                    temp = Console.ReadLine();
+                    operandChecked = double.TryParse(temp, out number);
+                    if (!operandChecked)
+                    {
+                        Console.WriteLine("{0} is not a number! Please try again: ", temp);
+                    }
+                }
+                while (!operandChecked);
+
+                if (number >= 0 && number <= 14)
+                {
+                    Console.WriteLine($"Nunmer {number} is in range [0,14].");
+                }
+                else if (number >= 15 && number <= 35)
+                {
+                    Console.WriteLine($"Nunmer {number} is in range [15,35].");
+                }
+                else if (number >= 36 && number <= 50)
+                {
+                    Console.WriteLine($"Nunmer {number} is in range [36,50].");
+                }
+                else if (number >= 51 && number <= 100)
+                {
+                    Console.WriteLine($"Nunmer {number} is in range [50,100].");
+                }
+                else
+                {
+                    Console.WriteLine($"Nunmer {number} is less than 0 or gteater than 100.");
+                }
+                Console.Write("New number - press any key, Exit - press Enter...");
+            }
+            while (Console.ReadKey().Key != ConsoleKey.Enter);
             #endregion
         }
     }
