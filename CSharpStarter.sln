@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 002", "Lesson1\Lesso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 002 Form", "Lesson_002_form\Lesson 002 Form.csproj", "{87D479D0-BCC2-4CB6-9056-E919DAEF06A0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 003", "Lesson 003\Lesson 003.csproj", "{54FDB544-A514-4FA6-A3C7-98DD693AA413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 003 Variables", "Lesson 003\Lesson 003 Variables.csproj", "{54FDB544-A514-4FA6-A3C7-98DD693AA413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson 004", "Lesson 004\Lesson 004.csproj", "{DE255BD4-A34B-45B6-B091-C622C30B5B8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 004 Conditions", "Lesson 004\Lesson 004 Conditions.csproj", "{DE255BD4-A34B-45B6-B091-C622C30B5B8D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson 005", "Lesson 005\Lesson 005.csproj", "{C01FADD4-D01B-4ABE-89E4-4010F58A46E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson 006 Loops", "Lesson 006 Loops\Lesson 006 Loops.csproj", "{F2E38225-476B-47A6-A55E-FBFBF8D928AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE255BD4-A34B-45B6-B091-C622C30B5B8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01FADD4-D01B-4ABE-89E4-4010F58A46E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01FADD4-D01B-4ABE-89E4-4010F58A46E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01FADD4-D01B-4ABE-89E4-4010F58A46E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01FADD4-D01B-4ABE-89E4-4010F58A46E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2E38225-476B-47A6-A55E-FBFBF8D928AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E38225-476B-47A6-A55E-FBFBF8D928AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E38225-476B-47A6-A55E-FBFBF8D928AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E38225-476B-47A6-A55E-FBFBF8D928AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
