@@ -7,12 +7,24 @@ namespace Lesson_003
         static void Main(string[] args)
         {
             #region Task1
-            int x = 10, y = 12, z = 3;
+            int x = 4, y = 20, z = 3;
             Console.WriteLine("Task 1");
             Console.WriteLine("At the beggining: x={0}, y={1}, z={2}", x, y, z);
-            x += y - x++ * z; 
+            x = x++ + ++x;
+            Console.WriteLine("x = x++ + ++x");
+            Console.WriteLine("Now: x={0}, y={1}, z={2}", x, y, z);
+            x = x-- - --x;
+            Console.WriteLine("x = x-- - --x");
+            Console.WriteLine("Now: x={0}, y={1}, z={2}", x, y, z);
+            x = x++;
+            Console.WriteLine("x = x++;");
+            Console.WriteLine("Now: x={0}, y={1}, z={2}", x, y, z);
+            x += x++;
+            Console.WriteLine("x += x++");
+            Console.WriteLine("Now: x={0}, y={1}, z={2}", x, y, z);
+            x += y - ++x * z; 
 
-            Console.WriteLine("x += y - x++ * z");
+            Console.WriteLine("x += y - ++x * z");
             Console.WriteLine("x=" + x);
             Console.WriteLine("Now: x={0}, y={1}, z={2}", x, y, z);
             z = --x - y * 5;

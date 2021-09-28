@@ -58,9 +58,9 @@ namespace Lesson_004
                         Console.WriteLine("Слова '{0}' нет в словаре.", word);
                         break;            
                 }
-                Console.Write("New word - press any key, Exit - press Enter...");
+                Console.Write("New word - press any key, Exit - press Esc...");
             }
-            while (Console.ReadKey().Key != ConsoleKey.Enter) ;
+            while (Console.ReadKey(true).Key != ConsoleKey.Escape) ;
             #endregion
 
             #region Task2
@@ -134,9 +134,9 @@ namespace Lesson_004
                 while (!result.HasValue);
 
                 Console.WriteLine("Result: {0} {1} {2} = {3}.", operand1, sign, operand2, result.Value);
-                Console.Write("New calculation - press any key, Exit - press Enter...");
+                Console.Write("New calculation - press any key, Exit - press Esc...");
             }
-            while (Console.ReadKey().Key != ConsoleKey.Enter);
+            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             #endregion
 
             #region Task3
@@ -178,9 +178,9 @@ namespace Lesson_004
                 {
                     Console.WriteLine($"Nunmer {number} is less than 0 or gteater than 100.");
                 }
-                Console.Write("New number - press any key, Exit - press Enter...");
+                Console.Write("New number - press any key, Exit - press Esc...");
             }
-            while (Console.ReadKey().Key != ConsoleKey.Enter);
+            while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             #endregion
         }
     }
