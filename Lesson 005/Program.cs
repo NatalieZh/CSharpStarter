@@ -40,7 +40,15 @@ namespace Lesson_005
             {
                 Console.WriteLine($"Number {i} is odd!");
             }
-
+            result = (i % 2) == 0;
+            if (result)
+            {
+                Console.WriteLine($"Number {i} is even!");
+            }
+            else
+            {
+                Console.WriteLine($"Number {i} is odd!");
+            }
             // Task 3
             Console.WriteLine("Task 3");
             int x = 5, y = 10, z = 15;
